@@ -64,11 +64,8 @@ public class DialogContent extends Parent{
     @FindBy ( css = "[value=\"Log In\"]")
     private WebElement loginBtn;
 
-    @FindBy (css = "div[id=\"leftPanel\"] b")
-    private WebElement welcomeMsg;
-
-    @FindBy (css = "div[id=\"rightPanel\"]>h1")
-    private WebElement errorMsg;
+    @FindBy (css = "h1[class=\"title\"]")
+    private WebElement loginMsg;
 
     //*****
     @FindBy(linkText = "Bill Pay")
@@ -131,8 +128,7 @@ public class DialogContent extends Parent{
 
         switch (strElement){
             case "successMsg" : myElement = successMsg; break;
-            case "welcomeMsg" : myElement = welcomeMsg; break;
-            case "errorMsg" : myElement = errorMsg; break;
+            case "loginMsg" : myElement = loginMsg; break;
             case "paymentResult" : myElement = paymentResult; break;
         }
         verifyContainsText(myElement,text);

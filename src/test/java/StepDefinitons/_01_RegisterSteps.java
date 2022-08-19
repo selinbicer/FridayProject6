@@ -28,7 +28,7 @@ public class _01_RegisterSteps {
         dc.findAndSend("inputZipcode","00000");
         dc.findAndSend("phoneNo","54356556");
         dc.findAndSend("inputSSN","9878978787");
-        dc.findAndSend("inputUsername","group16");
+        dc.findAndSend("inputUsername","16group");
         dc.findAndSend("inputPassword","123456");
         dc.findAndSend("repeatedPassword","123456");
         dc.findAndClick("saveBtn");
